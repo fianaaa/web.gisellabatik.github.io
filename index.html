@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gisella Batik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href='#'>Gisella</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#kategori">kategori</a></li>
+                    <li><a href="#model">model</a></li>
+                    <li><a href="#marketplace">marketplace</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <!-- Tombol untuk membuka modal -->
+                    <button class="open-button" onclick="openmodal()">sign up</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- modal -->
+    <div id="signupmodal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closemodal()">&times;</span>
+            <h2>sign up</h2>
+            <form class="form-container" action="your_server_endpoint.php" method="POST">
+                <div class="form-group">
+                    <label for="Nama">Nama:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="Alamat">Alamat:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="No hp">No Hp:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="Kode Pos">Kode Pos:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="Jenis Kelamin">Jenis Kelamin:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="Agama">Agama:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="sign up">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="wrapper">
+        <!--untuk home-->
+        <section id="home">
+            <img src="https://th.bing.com/th/id/OIP.AqMCY0ftF6uhMyeZnM1sdgHaF7?pid=ImgDet&rs=1"/>
+            <div class="kolom">
+                <p class="deskripsi">kerajinan batik #homemade</p>
+                <h2>World City of Batik</h2>
+                <p>Budaya nusantara dengan memakai batik asli dari pekalongan hasil karya home made </p>
+                <p><a href="" class="tbl-brown">cek lebih lanjut</a></p>
+            </div>
+        </section>
+
+        <!--untuk kategori-->
+        <section id="kategori">
+            <div class="kolom">
+                <p class="deskripsi">you will need this</p>
+                <h2>Ready to market</h2>
+                <p>Batik merupakan salah satu warisan budaya yang dibanggakan oleh seluruh masyarakat Indonesia.</p>
+                <p>Buat tampilan makin keren dengan balutan koleksi terbaru kita ini. Batik tulis dengan motif ini hanya bisa anda dapatkan di toko kami. Pesan segera hanya melalui official store kami di marketplace </p>
+                <p><a href="" class="tbl-grey">cek lebih lanjut</a></p>
+            </div>
+            <img src="https://thumbs.dreamstime.com/b/abstract-hand-drawn-ethnic-pattern-card-set-grunge-series-image-template-frame-design-50100094.jpg" width="400px">
+        </section>
+
+        <!--untuk model-->
+        <section id="model">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">our top model</p>
+                    <h2>Model</h2>
+                    <p>Temukan kategori model sesuai kebutuhanmu.</p>
+                </div>
+                <div class="model-list">
+                    <div class="kartu-model">
+                        <img src="https://th.bing.com/th?q=Batik+Sarimbit&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-ID&cc=ID&setlang=en&adlt=strict&t=1&mw=247"/>
+                        <p>couple</p>
+                </div>
+                <div class="model-list">
+                    <div class="kartu-model">
+                        <img src="https://th.bing.com/th/id/OIP.n_GbEdxIuyCQ2AYAbcSmPgHaHE?w=221&h=211&c=7&r=0&o=5&pid=1.7"/>
+                        <p>tunik</p>
+                </div>
+                <div class="model-list">
+                    <div class="kartu-model">
+                        <img src="https://th.bing.com/th/id/OIP.3AN9sycPMhYwj0CLnxcuSQHaHa?pid=ImgDet&w=194&h=194&c=7"/>
+                        <p>kebaya</p>
+                </div>               
+                <div class="model-list">
+                    <div class="kartu-model">
+                        <img src="https://th.bing.com/th/id/OIP.8ClrMgUK_FLbnhk8jPT8ywHaHa?w=196&h=196&c=7&r=0&o=5&pid=1.7"/>
+                        <p>gamis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--untuk marketplace-->
+        <section id="marketplace">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">our to marketplace</p>
+                    <h2>Marketplace</h2>
+                    <p>Untuk lebih detailnya kamu bisa order lewat marketplace resmi kami :</p>
+                </div>
+
+                <div class="marketplace-list">
+                    <div class="kartu-marketplace">
+                        <img src="https://th.bing.com/th/id/OIP.NWY_ywjL5lqFqUN-J4p1ggHaHa?w=188&h=188&c=7&r=0&o=5&pid=1.7"/>
+                        <p>@Gisella.pkl</p>
+                    </div>
+                    <div class="kartu-marketplace">
+                        <img src="https://th.bing.com/th/id/OIP.-kjcOHxvEtErDO5H06zGIgHaGE?w=205&h=180&c=7&r=0&o=5&pid=1.7"/>
+                        <p>@Gisella Batik</p>
+                    </div>
+                    <div class="kartu-marketplace">
+                        <img src="https://th.bing.com/th/id/OIP.bC88old9ZJrNIW_K_yRk9QHaEt?w=238&h=180&c=7&r=0&o=5&pid=1.7"/>
+                        <p>@Gisella Batik</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>Gisella Batik</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, soluta?</p>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, soluta?</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Maps</h3>
+                    <p>jl.kh wahid hasyim samborejo, tirto, pekalongan</p>
+                    <p>kode pos: 51115</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <p>facebook : Gisella Batik whatsapp: 089673402626</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2023. <b>Gisella Batik.</b> All Right Reserved.
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk membuka modal
+        function openmodal() {
+            document.getElementById("signupmodal").style.display = "block";
+        }
+
+        // Fungsi untuk menutup modal
+        function closemodal() {
+            document.getElementById("signupmodal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
